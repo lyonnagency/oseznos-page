@@ -1,0 +1,36 @@
+@import'variables.scss';
+@mixin restartLink {
+  &:hover{
+    // color: inherit !important;
+    text-decoration: none!important;
+  }
+}
+
+@mixin centerUnderline {
+  position: relative;
+  &::after{
+    content: "";
+    width: 0;
+    height: .15em;
+    background: $purple;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    position: absolute;
+    bottom: -7px;
+    -webkit-transition: all $timer linear;
+    transition: all $timer linear;
+  }
+  &:hover::after{
+    width: 50%;
+  }
+}
+
+@mixin hoverIcon {
+  transition: opacity $timer linear;
+    &:hover{
+      opacity: 0.8;
+    }
+}
+
+

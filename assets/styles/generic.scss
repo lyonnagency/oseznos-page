@@ -1,0 +1,795 @@
+@import "fonts.scss";
+@import "mixin.scss";
+@import "variables.scss";
+
+body, h2, h3 {
+  font-size: 13px;
+  //@include sm {
+  //  font-size: 12px;
+  //}
+  @include md {
+    font-size: 14px;
+  }
+
+  @include lg {
+    font-size: 16px;
+  }
+}
+
+
+a {
+  @include restartLink;
+}
+
+.ff-bebas {
+  font-family: "bebas-kai";
+}
+
+.ff-old-school-in-alt {
+  font-family: "old-school-inline-alt";
+}
+
+.ff-old-school-regular {
+  font-family: "old-school-regular";
+}
+
+.ff-museo-sans {
+  font-family: "museo-sans";
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.fs-10 {
+  font-size: $s10 !important;
+}
+
+.fs-11 {
+  font-size: $s11 !important;
+}
+
+.fs-sm-13 {
+  font-size: $s16 !important;
+
+  a {
+    font-size: $s16 !important;
+  }
+}
+
+.fs-13 {
+  font-size: $s13;
+
+  a {
+    font-size: $s13 !important;
+  }
+}
+
+.fs-14 {
+  font-size: $s14;
+
+  a {
+    font-size: $s14 !important;
+  }
+
+  //@include lg {
+  //  font-size: $s14 !important;
+  //}
+  //
+  //a {
+  //  font-size: calc((1.2 * 14px)) !important;
+  //  @include lg {
+  //    font-size: $s14 !important;
+  //  }
+  //}
+}
+
+.fs-16 {
+  //font-size: calc((0.6 * 22px));
+  font-size: $s16;
+  //
+  //@include md {
+  //  font-size: calc((0.7 * 20px));
+  //}
+  //@include lg {
+  //  font-size: $s16 !important;
+  //}
+}
+
+.fs-18 {
+  font-size: $s18;
+  //font-size: calc((0.6 * 22px));
+  //
+  //@include md {
+  //  font-size: calc((0.7 * 20px));
+  //}
+  //@include lg {
+  //  font-size: $s18 !important;
+  //}
+}
+
+// .fs-sm-18{
+//   font-size: 18px!important;
+// }
+.fs-22 {
+  font-size: $s16;
+  //font-size: calc((0.6 * 22px));
+
+  //@include md {
+  //  font-size: calc((0.7 * 22px));
+  //}
+  //
+  @include lg {
+    font-size: $s22;
+  }
+}
+
+.fs-24 {
+  font-size: $s24;
+}
+
+.fs-25 {
+  font-size: $s25;
+}
+.fs-28 {
+  font-size: $s28;
+}
+
+.fs-40 {
+  font-size: $s40;
+  //font-size: calc((0.6 * 45px));
+  //@include md {
+  //  font-size: calc((0.7 * 45px));
+  //}
+  //@include lg {
+  //  font-size: $s40;
+  //}
+}
+
+.fs-46 {
+  font-size: $s28;
+
+  @include md{
+    font-size: $s36;
+  }
+
+  @include lg {
+    font-size: $s46;
+  }
+}
+
+.fs-50 {
+  font-size: $s50;
+  //font-size: calc((0.5 * 60px));
+  @include md {
+    font-size: $s36;
+  }
+  @include lg {
+    font-size: $s50;
+  }
+}
+
+.fs-60 {
+  font-size: $s46;
+  //
+  @include sm {
+    font-size: $s46;
+  }
+  @include md {
+    font-size: $s60;
+  }
+  //@include lg {
+  //  font-size: $s60;
+  //}
+}
+
+.fs-66 {
+  font-size: $s36;
+
+  @include md {
+    font-size: $s50;
+  }
+  @include lg {
+    font-size: $s66;
+  }
+}
+
+// Class used to set font-size 60 on small devices
+.fs-sm-60 {
+  font-size: $s40;
+  //font-size: calc((0.9 * 60px));
+  @include md {
+    font-size: $s60;
+  }
+}
+
+
+.fs-72 {
+  font-size: $s72;
+  //font-size: calc((0.6 * 65px));
+  //@include md {
+  //  font-size: calc((0.7 * 65px));
+  //}
+  //@include lg {
+  //  font-size: $s72;
+  //}
+}
+
+.fs-87 {
+  font-size: $s60;
+  //font-size: calc((0.6 * 74px));
+  //@include md {
+  //  font-size: calc((0.7 * 74px));
+  //}
+  @include lg {
+    font-size: $s87;
+  }
+}
+
+.fs-96 {
+  font-size: $s60;
+  //font-size: calc((0.6 * 74px));
+  @include md {
+    font-size: $s87;
+  }
+  @include lg {
+    font-size: $s96;
+  }
+}
+
+
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.hover-center-underline {
+  @include centerUnderline;
+}
+
+
+.color-purple {
+  color: $purple !important;
+}
+
+.color-purple-darker {
+  color: $purple-darker !important;
+}
+
+.color-yellow {
+  color: $yellow !important;
+}
+
+.oseznos-menu-brand{
+  width: 80px;
+  @include lg{
+    width: 127px;
+  }
+}
+
+.space-section-bottom {
+  margin-bottom: 80px;
+  @include md {
+    margin-bottom: 150px;
+  }
+  @include lg {
+    margin-bottom: 200px;
+  }
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.skew-left-before {
+  position: relative;
+  z-index: 3;
+
+  &:before {
+    position: absolute;
+    content: '';
+
+    width: 110%;
+    height: 100%;
+    left: -10%;
+    bottom: 0;
+    z-index: -1;
+    transform: skewX(-8deg) scaleY(1.1);
+  }
+}
+
+.skew-right-before {
+  position: relative;
+  z-index: 5;
+
+  &:before {
+    position: absolute;
+    content: '';
+
+    width: 105%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: skewX(-8deg);
+  }
+}
+
+.bg-yellow-before {
+  &:before {
+    background-image: url("../img/svg/bg-yellow-skew.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 120%;
+    left: -10%;
+    top: 0;
+    @include sm {
+      top: -8%;
+      background-size: 100%;
+      background-image: url("../img/svg/bg-yellow-skew-sm.svg");
+      width: 120%;
+      transform: skewX(0);
+    }
+    @include md {
+      background-image: url("../img/svg/bg-yellow-skew-md.svg");
+    }
+    @include lg {
+      background-color: $yellow;
+      background-image: none;
+      transform: skewX(-8deg);
+      top: 0;
+      width: 104%;
+      height: 100%;
+      left: unset;
+      right: -5%;
+    }
+  }
+}
+
+.bg-purple-darker-before {
+  &:before {
+    background-image: url("../img/svg/bg-blue-skew.svg");
+    background-size: cover;
+    width: 120%;
+    position: absolute;
+    left: -10%;
+    height: 113%;
+    @include sm {
+      background-image: url("../img/svg/bg-blue-skew-sm.svg");
+      width: 105%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: -2%;
+      height: 113%;
+      bottom: -13%;
+      transform: skewX(0);
+    }
+    @include md {
+      background-image: url("../img/svg/bg-blue-skew-md.svg");
+    }
+    @include lg {
+      background-color: $purple-darker;
+      background-image: none;
+      transform: skewX(-8deg) scaleY(1.1);
+      top: 0;
+      left: -5%;
+      height: 100%;
+      width: 104%;
+    }
+  }
+}
+
+.skew-yellow-school {
+  &:before {
+    background-image: url("../img/svg/skew-yellow-school-xs.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150%;
+    position: absolute;
+    left: -0%;
+    height: 113%;
+    transform: skewX(0);
+    @include sm {
+      background-image: url("../img/svg/skew-yellow-school-sm.svg");
+      width: 120%;
+      background-repeat: no-repeat;
+      background-size: 110%;
+      left: -2%;
+      height: 111%;
+      bottom: -13%;
+      transform: skewX(0);
+    }
+    @include md {
+      background-size: contain;
+      background-image: url("../img/svg/skew-yellow-school-md.svg");
+    }
+    @include lg {
+      background-color: $yellow;
+      background-image: none;
+      transform: skewX(-8deg) scaleY(1.1);
+      top: 0;
+      left: -5%;
+      height: 100%;
+      width: 104%;
+    }
+  }
+}
+
+.skew-purple-school {
+  &:before {
+    background-image: url("../img/svg/skew-purple-school-xs.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 150%;
+    position: absolute;
+    left: -1%;
+    height: 113%;
+    transform: skewX(0);
+    @include sm {
+      background-image: url("../img/svg/skew-purple-school-sm.svg");
+      width: 105%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: -3%;
+      height: 113%;
+      bottom: 0;
+      transform: skewX(0);
+    }
+    @include md {
+      background-image: url("../img/svg/skew-purple-school-md.svg");
+      height: 140%;
+      bottom: -15%;
+    }
+    @include lg {
+      background-color: $purple-darker;
+      background-image: none;
+      transform: skewX(-8deg);
+      top: 0;
+      left: 1%;
+      height: 100%;
+      width: 104%;
+    }
+  }
+}
+
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.space-section-top {
+  margin-top: 125px;
+
+  @include lg {
+    margin-top: 170px;
+  }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.tracking-50 {
+  letter-spacing: 1px;
+}
+
+.container1 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include lg {
+    max-width: 85%;
+  }
+}
+
+.container3 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include lg {
+    max-width: 83%;
+  }
+}
+
+.container4 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include lg {
+    max-width: 70%;
+  }
+}
+
+.w-100-xs {
+  // Used with the container4
+  max-width: 100%;
+  @include sm {
+    max-width: 90%;
+  }
+  @include lg {
+    max-width: 78%;
+  }
+}
+
+.lef-less-50 {
+  left: -8%;
+  @include md {
+    left: -5%;
+  }
+  @include lg {
+    left: 0;
+  }
+}
+
+.torn-claw {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    background-image: url("../img/svg/torn-claw.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 0;
+  }
+}
+
+.torn-claw-yellow {
+  &::before {
+    background-image: url("../img/svg/torn-claw-yellow.svg");
+  }
+}
+
+$skewDeg: -15deg;
+.trapeze {
+  padding: 15px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  height: fit-content;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  // &:hover{
+  //   &::before{
+  //     transform: skew(-$skewDeg);
+  //   }
+  // }
+}
+
+.trapeze.text-white {
+  color: white !important;
+}
+
+.trapeze-purple {
+  color: $yellow !important;
+
+  a {
+    color: $yellow !important;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $purple;
+    position: absolute;
+    z-index: -1;
+    transform: skew($skewDeg);
+  }
+}
+
+
+.trapeze-purple-darker {
+  &::before {
+    background-color: $purple-darker;
+  }
+}
+
+.trapeze-yellow {
+  color: $purple !important;
+
+  &::before {
+    background-color: $yellow;
+    position: absolute;
+    z-index: -1;
+    transform: skew($skewDeg);
+  }
+}
+
+.trapeze-yellow-neg {
+  color: $yellow !important;
+
+  &::before {
+    background-color: $purple-darker;
+    position: absolute;
+    z-index: -1;
+    transform: skew($skewDeg);
+    border: 1px solid $yellow;
+  }
+}
+
+.trapeze-green {
+  color: $purple !important;
+
+  &::before {
+    background-color: $green;
+    position: absolute;
+    z-index: -1;
+    transform: skew($skewDeg);
+  }
+
+  img {
+    width: 20px;
+  }
+}
+
+.trapeze-white {
+  color: $purple !important;
+
+  &::before {
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    transform: skew($skewDeg);
+  }
+
+  img {
+    width: 20px;
+  }
+}
+
+.text-black {
+  color: black;
+}
+
+.main-text-hero {
+  &:after {
+    content: '';
+    width: 100%;
+    height: 400%;
+    position: absolute;
+    background-image: url("../img/svg/torn-claw-hero.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    right: -25%;
+    z-index: -3;
+  }
+}
+
+.h-100-sm-before {
+  &:before {
+    height: 105%;
+    //@include sm{
+    //  height: 100%;
+    //}
+  }
+}
+
+.card-benefits {
+  img {
+    width: 66px;
+    height: 66px;
+  }
+
+  .col-text {
+    h3 {
+      font-family: 'bebas-kai';
+      font-size: $s24;
+      text-transform: uppercase;
+      color: $purple-darker;
+    }
+
+    p {
+      font-size: $s15;
+      font-family: 'museo-sans';
+    }
+  }
+}
+
+
+.border-right-dashed {
+  @include sm {
+    border-right: 1px dashed $purple-darker;
+    border-right-width: 2px;
+  }
+}
+
+.border-right-sm-none {
+  @include sm {
+    border-right-width: 0;
+  }
+}
+
+.border-right-sm-dashed {
+  @include sm {
+    border-right: 1px dashed $purple-darker;
+    border-right-width: 2px;
+  }
+  @include lg {
+    border-right-width: 0;
+  }
+}
+
+.border-right-lg-dashed {
+  @include lg {
+    border-right: 1px dashed $purple-darker;
+    border-right-width: 2px;
+  }
+}
+
+
+.border-bottom-dashed-xs {
+  border-bottom: 1px dashed $purple-darker;
+  border-bottom-width: 2px;
+  @include sm {
+    border-bottom: 0 solid white;
+  }
+}
+
+.border-bottom-dashed-sm {
+  border-bottom: 1px dashed $purple-darker;
+  border-bottom-width: 2px;
+  @include sm {
+    border-bottom: 1px dashed $purple-darker;
+    border-bottom-width: 2px;
+  }
+  @include lg {
+    border-bottom-width: 0;
+  }
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed $purple-darker;
+  border-bottom-width: 2px;
+  position: relative;
+  //&:before {
+  //  content: '';
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 1px;
+  //  right: 0;
+  //  background-image: url("../img/svg/TableBenefits/dashed-line.svg");
+  //  background-size: contain;
+  //  background-repeat: no-repeat;
+  //  transform: rotate(90deg);
+  //  transform-origin: center;
+  //}
+}
